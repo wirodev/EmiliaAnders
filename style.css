@@ -213,19 +213,22 @@ header {
   /* Small arch, subtle height */
 }
 
-/* Flower Decoration */
-.flower-decoration {
+/* Flower Crown Decoration */
+.flower-crown {
   text-align: center;
-  margin-top: -10px;
-  margin-bottom: 20px;
+  padding-top: 10%; /* Replaces the h2 padding */
+  margin-bottom: 5px; /* Creates a nice gap between flower and text */
 }
 
-.flower-decoration img {
-  width: 100px;
+.flower-crown img {
+  width: 90px;
   height: auto;
-  mix-blend-mode: multiply;
-  /* Blends white background into the sand color */
-  opacity: 0.9;
+  mix-blend-mode: multiply; /* Blends white background into the sand color */
+  opacity: 0.95;
+}
+
+.crowned-heading {
+  padding-top: 0 !important; /* Overrides the global h2 padding so it sits flush with the crown */
 }
 
 .hero-content h1 {
