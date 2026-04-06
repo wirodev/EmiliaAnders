@@ -433,4 +433,37 @@ footer a {
   section {
     padding: var(--space-xl) 0;
   }
+
+  .image-break {
+    background-image: none;
+    position: relative;
+    height: 75vh;
+    overflow: hidden;
+    background-color: var(--color-bg);
+  }
+
+  .image-break::before {
+    content: '';
+    position: absolute;
+    top: -50px; left: -50px; right: -50px; bottom: -50px;
+    background-image: url('./images/andersochemilia.JPG');
+    background-size: cover;
+    background-position: center 30%;
+    background-attachment: fixed;
+    filter: blur(20px);
+    opacity: 0.5;
+    z-index: 1;
+  }
+
+  .image-break::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: url('./images/andersochemilia.JPG');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 2;
+    filter: drop-shadow(0 10px 30px rgba(0,0,0,0.15));
+  }
 }
