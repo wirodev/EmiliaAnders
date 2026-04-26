@@ -216,19 +216,23 @@ header {
 /* Flower Crown Decoration */
 .flower-crown {
   text-align: center;
-  padding-top: 10%; /* Replaces the h2 padding */
-  margin-bottom: 5px; /* Creates a nice gap between flower and text */
+  padding-top: 10%;
+  /* Replaces the h2 padding */
+  margin-bottom: 5px;
+  /* Creates a nice gap between flower and text */
 }
 
 .flower-crown img {
   width: 90px;
   height: auto;
-  mix-blend-mode: multiply; /* Blends white background into the sand color */
+  mix-blend-mode: multiply;
+  /* Blends white background into the sand color */
   opacity: 0.95;
 }
 
 .crowned-heading {
-  padding-top: 0 !important; /* Overrides the global h2 padding so it sits flush with the crown */
+  padding-top: 0 !important;
+  /* Overrides the global h2 padding so it sits flush with the crown */
 }
 
 .hero-content h1 {
@@ -339,7 +343,7 @@ header {
 }
 
 .hashtag-content i {
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   margin-bottom: var(--space-sm);
   opacity: 0.8;
   display: block;
@@ -347,7 +351,7 @@ header {
 
 .hashtag-content p {
   font-family: var(--font-heading);
-  font-size: 1.2rem;
+  font-size: 0.75rem;
   margin-bottom: var(--space-sm);
   font-style: italic;
 }
@@ -498,7 +502,10 @@ footer a {
   .image-break::before {
     content: '';
     position: absolute;
-    top: -50px; left: -50px; right: -50px; bottom: -50px;
+    top: -50px;
+    left: -50px;
+    right: -50px;
+    bottom: -50px;
     background-image: url('./images/andersochemilia.JPG');
     background-size: cover;
     background-position: center 30%;
@@ -517,6 +524,6 @@ footer a {
     background-position: center;
     background-repeat: no-repeat;
     z-index: 2;
-    filter: drop-shadow(0 10px 30px rgba(0,0,0,0.15));
+    filter: drop-shadow(0 10px 30px rgba(0, 0, 0, 0.15));
   }
 }
